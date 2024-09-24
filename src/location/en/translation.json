@@ -1,0 +1,79 @@
+{
+  "components":{"showMore":"Show more","contactUs":"Contact us","send":"send","inputPlaceHolder":{"contactUs":"write e-mail to contact with you"}},
+  "location":{"sa":"saudi arabia","eg":"egypt"}
+
+,  "nav":{"pages":{"home":"home","aboutUs":"about nia","ourServices":"services","ourTeam":"our team",
+"solution":{"sw":{"sw":"nia solutions","solution":"software solutions","mr":"digital marketing"}},"ads":{"ads":"nia advertising","inDoor":"in Door","outDoor":"out Door"}
+  }},
+  "address": { "ga": "Aziziyah-Jeddah-23337,SaudiArab ","rd":"Salhiya-Riyadh-12662,SaudiArabia","gz":" Al NasrBuildingGizasquare-Giza,Egypt"},
+
+  "home":{
+    "mainSection":{"header":{"darkText":"Welcome to the world of","orangeText":"Nia","caption":"in nia we can provide you all services like advertising or software solution and marketing strategies."}
+  }
+  ,"aboutNia":{"header":{"darkText":"About ","orangeText":"nia"}
+  ,"backgroundText":{"header":"nia","subHeader":"About"},
+  "litter":"1993 saw a turning point in the domestic market; Because our company NIA was founded specializing in propaganda and advertising, and we found that the market is hungry for creativity, we decided to satisfy it with our endless ideas and sincerity in making our promises for more than 30 years, and we started to show business by innovating solutions and designs by a selection of the best experts inAll fields where we contributed to the industry and installation of more than 150,000 meters for all types of advertising signs and we would not have provided these services with the required efficiency if not one of our factories established across Saudi Arabia designed with the highest efficiency and equipped with the latest machines in the world established our own production line.We are now building bridges towards software and digital marketing to achieve the same successes as advertising."
+}
+,"services":{
+  "header":{"darkText":"services"},
+  "description":"In nia, we believe that the combination of creativity and technology is the key to success. We provide you with outstanding advertising services that make your brand modern and smart software solutions that meet all your technical needs."
+  ,"services":{"niaSolution":{"header":"software solutions","description":"Achieve your technical goals with our advanced software development services."}
+,"ads":{"header":"digital marketing","description":"Start with your brand with our creative solutions in publicity and advertising."
+,"inDoor":{"header":"in door","description":"We offer indoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}
+,"outDoor":{"header":"out door","description":"We offer outdoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}
+}
+} 
+}
+,"ourTeam":{"header":{"darkText":"meet our","orangeText":"team"}
+  ,"description":"Our team includes a selection of specialists who work together to achieve success"
+  ,"teamMembers":{
+    "SA":{"seo":{"title":"general manager","name":"youssef bwazzer"},"EM":{"title":"executive manager","name":"ahmed elshigh"},"AM":{"title":"administrative manager","name":"samir el bataty"}},
+    "EG":{"EM":{"title":"executive manager","name":"hossam el masry"},"MM":{"title":"marketing manager","name":"shadi youssef" },"AM":{"title":"administrative manager","name":"abdallah el bataty"}}
+
+  }
+}
+
+  }
+  ,"contactUs":{
+    "header":{"darkText":"contact ","orangeText":"us"}
+    ,"description":"We are here to help you, contact us for more information or support",
+    "adress":{"SA":{"ads1":"Salhiya-Riyadh-12662,SaudiArabia ","ads2":"Aziziyah-Jeddah-23337,SaudiArab"},"EG":" Al-NasrBuildingGizasquare-Giza,Egypt"}
+    
+    ,"form":{"header":{"darkText":"Get in","orangeText":"touch"},"name":"full name","email":"email","phoneNumber":"phone number","message":"message"}
+  }
+  ,"softwareService": {
+    "name": "software",
+ "intro":{ 
+  "introductionHeader": {
+  "darkHeader": "Building Websites",
+  "orangeHeader": "Top-notch Programming Team"
+},
+"introductionText": "Our team of academics work alone, and do not outsource, which makes us the ideal choice to provide all web services whether your activity is local or commercial, as well as mobile applications; because these services complement each other. Nowadays, website design is one of the most influential factors in the success of a business to achieve financial returns, which makes it a display window that includes all the products or services provided, and helps you attract visitors from everywhere, and at all times, but the biggest and clearest goal is for your appearance to become familiar to many."
+} ,
+"categories":{
+"header":{
+   "darkHeader": "type of software services",
+"orangeHeader": ""
+},
+"categoriesText":"We are unique in providing software in an innovative way that includes developing and designing services that precisely meet your business needs, so that you can achieve your technical goals through our professional team whose efforts focus on increasing your production."
+
+,"categoriesData":{
+   "mobile": "mobile",
+   "website": "website",
+   "crm": "crm system",
+   "dashboard": "dashboard"
+
+}
+}
+, "desc":{     
+  "descriptionData":{
+     "mobile": {"name": "mobile app", "description": "A vital tool for communication and creativity, we provide easy access to services and information with a simple touch"},
+     "website": {"name": "website", "description": "We offer innovative and effective website design and development services, which ensure a strong and attractive digital presence, and help you achieve your business goals by providing a unique and easy to browse user experience ."},
+     "crm": {"name": "crm system", "description": "This program provides a lot of time. It helps to stay connected and helps you track potential clients in addition to making deals from start to finish without devising strategies to help manage workers' relationships."},
+     "dashboard":{"name": "dashboard", "description": "The main control panel of the site with many choices and settings from (article - media - pages - comments) and many specialized tools in modifying the site."}
+  }
+}
+
+
+}
+  }

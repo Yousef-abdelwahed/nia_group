@@ -1,0 +1,74 @@
+.titleSections {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  
+  span {
+    text-transform: capitalize;
+  }
+
+  &::after, &::before {
+    content: " ";
+    display: block;
+    height: 0.5rem;
+    width: 10rem;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+  }
+
+  &::after {
+    left: 100%;
+    background: rgb(239, 125, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(239, 125, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &::before {
+    right: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(239, 125, 0, 1) 100%
+    );
+  }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .titleSections::after, .titleSections::before {
+    height: 0.3rem; 
+    width: 4rem; 
+    
+    
+   
+  }
+
+  .titleSections::after {
+    left: 85%; /* Adjusted for smaller screens */
+  }
+
+  .titleSections::before {
+    right: 85%; /* Adjusted for smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .titleSections::after, .titleSections::before {
+    height: 0.4rem; 
+    width: 80px; 
+  }
+
+  .titleSections::after {
+    left: 100%; /* Adjusted for medium screens */
+  }
+
+  .titleSections::before {
+    right: 100%; /* Adjusted for medium screens */
+  }
+  
+}

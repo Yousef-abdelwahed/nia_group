@@ -1,0 +1,13 @@
+.nav-links{
+    
+    &:not(:first-child) {
+        // margin-top: 32px;
+        // border-top: 1px solid #4E4E4E;
+      }
+}
+.navbar_fixed{
+  background-color: red;
+}
+.navbar_default{
+  background-color: black;
+}

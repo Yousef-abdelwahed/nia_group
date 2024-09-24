@@ -1,0 +1,30 @@
+
+.scroll-container {
+
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 5px 0px rgba(244, 168, 85, 0.15);
+      padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+  transform: rotate(-4deg) translateY(10px);
+}
+
+.scroll-line {
+  display: inline-flex;     /* Inline-flex to keep elements in a row */
+  gap: 2rem;                /* Space between the items */
+  white-space: nowrap;      /* Prevent text from wrapping */
+  will-change: transform;   /* Optimize performance */
+}
+
+.scroll-line span {
+  display: inline-block;    /* Keep span elements in a row */
+  padding: 0 1rem;          /* Add padding for spacing */
+  text-align: center;       /* Center the text */
+}
+
+.star {
+  margin-left: 0.5rem;      /* Space between the text and the star */
+}
