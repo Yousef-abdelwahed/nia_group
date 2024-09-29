@@ -97,7 +97,7 @@ const NavMobile: FC<NavMobileProps> = ({
       initial={{ y: 0 }}
       animate={{ y: isVisible ? 0 : 5 }}
       transition={{ duration: 0.2, type: "spring" }}
-      className={`lg:hidden   flex fixed top-0 left-0 right-0  z-50 justify-between bg-slate-500 w-screen h-[55px]  md:h-20  bg-transparent transition-transform duration-300 ${
+      className={`lg:hidden bg-white   flex fixed top-0 left-0 right-0  z-50 justify-between  w-screen h-[55px]  md:h-20  bg-transparent transition-transform duration-300 ${
         currentUrl.pathname === "/contact-us"
           ? "border-b-2 w-full shadow-primary "
           : "  "

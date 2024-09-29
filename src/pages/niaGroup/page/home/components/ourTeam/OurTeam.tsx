@@ -94,11 +94,11 @@ const TeamSection: React.FC<IOurTeamProp> = ({ ourTeamProp }) => {
                           alt={teamName}
                           className="w-full   ourTeamImg min-h-[145px] lg:h-[192px] mx-auto object-cover "
                         />
-                        <figcaption className="text-[22px] mx-auto max-w-[14rem] md:text-[24px] lg:text-[28px] capitalize font-semibold text-center my-2">
+                        <figcaption className="text-[22px] mx-auto max-w-[14rem] md:text-[24px] lg:text-[28px] capitalize font-semibold text-center my-2 md:h-[84px]">
                           {teamPotions}
                         </figcaption>
                       </figure>
-                      <h4 className="text-[#464440]  text-center text-[18px] md:text-[20px] lg:text-[24px] capitalize ">
+                      <h4 className="text-[#464440]  text-center text-[18px] md:text-[20px] lg:text-[24px] capitalize text-nowrap ">
                         {teamName}
                       </h4>
                     </div>
