@@ -49,7 +49,7 @@ const Header = () => {
         variants={headerAnimation}
         initial="initial"
         animate="animate"
-        className="text-center max-w-screen  relative"
+        className="text-center max-w-screen  relative "
       >
         <NavDeskTop />
 

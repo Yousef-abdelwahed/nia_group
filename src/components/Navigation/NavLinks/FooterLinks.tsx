@@ -10,9 +10,9 @@ interface IProps {
 
 const routes = [
   { name: "Home", url: "/" },
-  { name: "about us", url: "about-us" },
-  { name: "our services", url: "" },
-  { name: "our works", url: "our-works" },
+  { name: "about us", url: "#about-us" },
+  { name: "our services", url: "#our_services" },
+  { name: "our works", url: "#our-works" },
   { name: "news", url: "news" },
 ];
 

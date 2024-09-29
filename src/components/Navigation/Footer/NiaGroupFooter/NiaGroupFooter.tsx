@@ -62,11 +62,15 @@ const socialIcons = [
 const NiaGroupFooter = ({}: IProps) => {
   const { t, i18n } = useTranslation();
   const footerLinks = [
-    { id: uuidv4(), page: t("nav.pages.home"), url: "/" },
+    {
+      id: uuidv4(),
+      page: t("nav.pages.home"),
+      url: location.pathname == "/" ? "#about-us" : "/",
+    },
     {
       id: uuidv4(),
       page: t("nav.pages.aboutUs") + (i18n.language === "ar" ? " Nia" : ""),
-      url: location.pathname == "/" ? "#about-us" : "/",
+      url: location.pathname == "/" ? "#hero_section" : "/",
     },
     {
       id: uuidv4(),
@@ -101,7 +105,7 @@ const NiaGroupFooter = ({}: IProps) => {
               key={uuidv4()}
               className="text-[1.125rem]  text-[#DCDCDC] text-nowrap capitalize text-start  "
             >
-              <a href={link.url}>{link.page} </a>
+              <HashLink to={link.url}>{link.page} </HashLink>
             </li>
           ))}
         </ul>

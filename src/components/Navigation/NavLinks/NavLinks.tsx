@@ -100,7 +100,6 @@ const NavItems = ({ type = "header" }) => {
                 textAlign="center"
                 justifyContent="center"
                 {...{ right: 0, left: "auto" }}
-               
               >
                 <MenuItemSubMenu>
                   <InnerMenu
@@ -112,7 +111,7 @@ const NavItems = ({ type = "header" }) => {
                       },
                       {
                         label: t("nav.pages.solution.sw.mr"),
-                        url: "https://www.soluation.nia.com.eg/nia-digital-marketing",
+                        url: "https://www.soluation.nia.com.eg/",
                       },
                     ]}
                   />
@@ -123,11 +122,11 @@ const NavItems = ({ type = "header" }) => {
                     childrenItems={[
                       {
                         label: t("nav.pages.ads.outDoor"),
-                        url: "https://www.soluation.nia.com.eg/",
+                        url: "https://www.nia.com.eg/",
                       },
                       {
                         label: t("nav.pages.ads.inDoor"),
-                        url: "https://www.soluation.nia.com.eg/nia-digital-marketing",
+                        url: "https://www.nia.com.eg/",
                       },
                     ]}
                   />

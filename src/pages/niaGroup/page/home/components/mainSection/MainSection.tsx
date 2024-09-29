@@ -3,7 +3,6 @@ import { useData } from "@/context/DataContext";
 import { getLastWord, removeLastWord } from "@/lib/textUtils";
 import { useTranslation } from "react-i18next";
 import { ToastContainer } from "react-toastify";
-import RectanglesComponent from "../regtangles/Rectangles";
 import ContentEmail from "./components/ContentEmail";
 
 interface IProp {
@@ -30,10 +29,10 @@ const MainSection: React.FC<IProp> = (bannerProp: IProp) => {
     <>
       <section
         id="hero_section"
-        className="main_container   overflow-hidden relative h-[421px] md:h-screen xl:h-[100vh]   p-0 m-0 w-screen"
+        className="main_container   overflow-hidden relative h-[421px] md:h-[638px] lg:h-screen xl:h-[100vh]   p-0 m-0 w-screen"
       >
-        <div className="max-md:w-full md:w-[80%] lg:w-[80%] xl:w-[60%] flex flex-col gap-28   px-[18px]  z-30 absolute left-1/2   bottom-[50%] transform translate-y-[50%] -translate-x-[50%]  ">
-          <div className="flex gap-8 flex-col ">
+        <div className="max-md:w-full md:w-[80%] lg:w-[80%] xl:w-[60%] flex flex-col   md:gap-28 px-[18px]  z-30 absolute left-1/2   bottom-[50%] transform translate-y-[50%] -translate-x-[50%]  ">
+          <div className="flex gap-8 flex-col max-md:justify-around ">
             <h1
               style={{ letterSpacing: "2px" }}
               className="main_container-header text-center  capitalize break-words	font-bold  max-md:text-balance md:text-center    text-[28px] md:text-[40px] lg:text-[60px] xl:text-[70px]  "
@@ -60,7 +59,7 @@ const MainSection: React.FC<IProp> = (bannerProp: IProp) => {
           />
         </div>
         <ToastContainer
-          position="top-left"
+          position="bottom-left"
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick

@@ -62,7 +62,7 @@ const ContactUs = () => {
   }, []);
   return (
     <>
-      <div className="about_brand-header  container  ps-[18px] lg:px-6 mx-auto mt-[24px] md:mt-[60px] lg:mt-[80px] mb-[70px] ">
+      <div className="about_brand-header  container  ps-[18px] lg:pt-[50px] lg:px-6 mx-auto mt-[24px] md:mt-[60px] lg:mt-[80px] mb-[70px] ">
         <h2 className="capitalize ">
           {t("contactUs.header.darkText")}
           <span className="text-primary mx-2  max-md: inline-block capitalize ">

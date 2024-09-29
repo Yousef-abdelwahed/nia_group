@@ -145,9 +145,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.niaSolution.description"
                     )}
-                    link={
-                      "https://www.soluation.nia.com.eg/nia-digital-marketing"
-                    }
+                    link={"https://www.soluation.nia.com.eg/"}
                     localization={localization}
                     translation={t}
                   />
@@ -213,7 +211,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.ads.outDoor.description"
                     )}
-                    link={"https://www.soluation.nia.com.eg/"}
+                    link={"https://www.adv.nia.com.eg/"}
                     localization={localization}
                   />
                   <ServiceCard
@@ -222,9 +220,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.ads.inDoor.description"
                     )}
-                    link={
-                      "https://www.soluation.nia.com.eg/nia-digital-marketing"
-                    }
+                    link={"https://www.adv.nia.com.eg/"}
                     localization={localization}
                     translation={t}
                   />

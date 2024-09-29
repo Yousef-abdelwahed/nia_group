@@ -88,7 +88,7 @@ const TeamSection: React.FC<IOurTeamProp> = ({ ourTeamProp }) => {
                       key={member.id}
                       className="team_card-member max-md:mt-8 max-md:mx-auto"
                     >
-                      <figure className="lg:w-[193px] min-w-[180px] ">
+                      <figure className="lg:w-[193px] min-w-[150px] ">
                         <img
                           src={`${API_BASE_IMG}/${member.img}`}
                           alt={teamName}
