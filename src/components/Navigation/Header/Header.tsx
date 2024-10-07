@@ -51,7 +51,7 @@ const Header = () => {
         animate="animate"
         className="text-center max-w-screen  relative "
       >
-        <NavDeskTop />
+        <NavDeskTop isVisible={isVisible} />
 
         <NavMobile
           isVisible={isVisible}

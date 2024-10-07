@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { FC, useRef, useState } from "react";
 import { useClickAway } from "react-use";
-import { footerLogo, navLogo } from "../../../../../assets";
+import { navLogo } from "../../../../../assets";
 
 import {
   Accordion,
@@ -11,13 +11,13 @@ import {
   AccordionPanel,
   Image,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { v4 as uuidv4 } from "uuid";
 import Icon from "../../../../../assets/icons/Icons";
 import Button from "../../../../Button";
 import LanguageSwitcher from "../../../LanguageSwitcher/LanguageSwitcher ";
-import { useTranslation } from "react-i18next";
-import { NavHashLink } from "react-router-hash-link";
 
 interface NavMobileProps {
   isVisible: boolean;
@@ -150,7 +150,7 @@ const NavMobile: FC<NavMobileProps> = ({
               </div>
 
               <ul
-                className={`text-center first:mb-[20px]  ${
+                className={`text-center first:mb-[20px] ${
                   i18n.language === "ar" ? "ltr" : "rtl"
                 }`}
               >
@@ -163,7 +163,7 @@ const NavMobile: FC<NavMobileProps> = ({
                             textAlign="end"
                             justifyContent="end"
                             fontSize={{ base: 24, md: 32 }}
-                            marginTop={1}
+                            marginTop={2}
                             padding={0}
                             className="capitalize "
                           >
@@ -173,7 +173,7 @@ const NavMobile: FC<NavMobileProps> = ({
                         </h2>
                         <AccordionPanel pb={4} allowMultiple>
                           <AccordionItem border={"none"} padding={0}>
-                            <h2 className="flex items-center  me-12  justify-end space-x-2  font-medium  md:text-[20px]  ">
+                            <h2 className="flex items-center  me-12  justify-end space-x-2  font-medium  md:text-[20px]   ">
                               <AccordionButton
                                 textAlign="end"
                                 justifyContent="end"

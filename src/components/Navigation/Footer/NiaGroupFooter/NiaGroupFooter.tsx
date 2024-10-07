@@ -159,21 +159,18 @@ const NiaGroupFooter = ({}: IProps) => {
                 {customIcon.locationIcon.telephone}
               </span>
               <div
-                className={`footer_details_location-description font-normal flex gap-2  ${
+                className={`footer_details_location-description font-normal grid grid-cols-2 md:grid-cols-3 my-2 md:gap-2  ${
                   i18n.language === "ar" && "phoneDirection"
                 }`}
               >
-                <span className="flex">
-                  <HashLink to={"tel:+966535463430"} className="flex">
-                    +966535463430
-                  </HashLink>{" "}
-                  <HashLink to={"tel:+966535530319"} className="flex mx-2">
-                    / +966535530319
-                  </HashLink>
-                </span>
-                /{" "}
+                <HashLink to={"tel:+966535463430"} className="flex">
+                  +966535463430
+                </HashLink>{" "}
+                <HashLink to={"tel:+966535530319"} className="flex">
+                  /+966535530319
+                </HashLink>
                 <HashLink to={"tel:+201080721500"} className="flex">
-                  +201080721500
+                  /+201080721500
                 </HashLink>
               </div>
             </div>

@@ -12,9 +12,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement>, ButtonProps {
 
 export type ButtonProps = VariantProps<typeof buttonVariants>;
 const buttonVariants = cva(
-  [
-    "text-white rounded-tl-[20px] rounded-br-[20px]  h-[3.13rem]  font-medium capitalize",
-  ],
+  ["text-white rounded-[10px]  h-[3.13rem]  font-medium capitalize"],
   {
     variants: {
       intent: {

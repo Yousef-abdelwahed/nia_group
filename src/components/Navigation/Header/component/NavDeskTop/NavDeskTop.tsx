@@ -11,20 +11,22 @@ import { NavHashLink } from "react-router-hash-link";
 //   currentUrl: { [key: string]: string };
 // }
 
-const NavDeskTop: FC = () => {
+const NavDeskTop: FC = ({ isVisible }) => {
   const { i18n } = useTranslation();
 
   return (
     <nav
-      className={`fixed  top-0 left-0 right-0 z-40 max-lg:hidden bg-white  shadow-md   pt-6 md:pt-0
+      className={`fixed  top-0 left-0 right-0 z-40 max-lg:hidden bg-white  shadow-md  px-5   pt-6 md:pt-0 ${
+        isVisible ? "bg-white opacity-90" : ""
+      }
       ${i18n.language === "ar" ? "rtl" : "ltr"}
       
     `}
     >
-      <div className=" flex items-center container">
+      <div className=" flex items-center px-4">
         <div className={` ${i18n.language !== "ar" ? "" : ""}  `}>
           <NavHashLink to={location.pathname == "/" ? "#hero_section" : "/"}>
-            <img src={navLogo} className="w-[150px]" alt="" />
+            <img src={navLogo} className={`w-[15vh] min-w-[50px] `} alt="" />
           </NavHashLink>
         </div>
         <NavItems />
