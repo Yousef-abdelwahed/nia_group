@@ -140,7 +140,7 @@ const NavItems = ({ type = "header" }) => {
     return (
       <li
         key={uuidv4()}
-        className={`text-start my-auto  ${
+        className={`text-start my-auto   ${
           type === "footer" ? "flex items-center first:pb-[22px]" : ""
         }`}
       >
@@ -160,7 +160,7 @@ const NavItems = ({ type = "header" }) => {
     <>
       <ul
         key={uuidv4()}
-        className={`flex justify-center  ${
+        className={`flex justify-center  gap-6 ${
           type === "header"
             ? "mx-auto   items-center w-full   max-h-[150px] "
             : ""
