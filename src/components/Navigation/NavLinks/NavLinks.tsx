@@ -107,11 +107,11 @@ const NavItems = ({ type = "header" }) => {
                     childrenItems={[
                       {
                         label: t("nav.pages.solution.sw.sw"),
-                        url: "https://www.soluation.nia.com.eg/",
+                        url: "https://www.soluation.nia.com.eg/nia-software",
                       },
                       {
                         label: t("nav.pages.solution.sw.mr"),
-                        url: "https://www.soluation.nia.com.eg/",
+                        url: "https://www.soluation.nia.com.eg/nia-digital-marketing",
                       },
                     ]}
                   />
@@ -122,11 +122,11 @@ const NavItems = ({ type = "header" }) => {
                     childrenItems={[
                       {
                         label: t("nav.pages.ads.outDoor"),
-                        url: "https://www.nia.com.eg/",
+                        url: "https://adv.nia.com.eg/out-door",
                       },
                       {
                         label: t("nav.pages.ads.inDoor"),
-                        url: "https://www.nia.com.eg/",
+                        url: "https://adv.nia.com.eg/in-door",
                       },
                     ]}
                   />

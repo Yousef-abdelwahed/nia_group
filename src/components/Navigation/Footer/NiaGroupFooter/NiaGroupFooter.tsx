@@ -65,12 +65,12 @@ const NiaGroupFooter = ({}: IProps) => {
     {
       id: uuidv4(),
       page: t("nav.pages.home"),
-      url: location.pathname == "/" ? "#about-us" : "/",
+      url: location.pathname == "/" ? "#hero_section" : "/",
     },
     {
       id: uuidv4(),
       page: t("nav.pages.aboutUs") + (i18n.language === "ar" ? " Nia" : ""),
-      url: location.pathname == "/" ? "#hero_section" : "/",
+      url: location.pathname == "/" ? "#about-us" : "/",
     },
     {
       id: uuidv4(),

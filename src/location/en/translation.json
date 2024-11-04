@@ -3,7 +3,7 @@
   "location":{"sa":"saudi arabia","eg":"egypt"}
 
 ,  "nav":{"pages":{"home":"home","aboutUs":"about nia","ourServices":"services","ourTeam":"our team",
-"solution":{"sw":{"sw":"nia solutions","solution":"software solutions","mr":"digital marketing"}},"ads":{"ads":"nia advertising","inDoor":"in Door","outDoor":"out Door"}
+"solution":{"sw":{"sw":"software solutions","solution":"Nia solutions","mr":"digital marketing"}},"ads":{"ads":"nia advertising","inDoor":"in Door","outDoor":"out Door"}
   }},
   "address": { "ga": "Aziziyah-Jeddah-23337,SaudiArab ","rd":"Salhiya-Riyadh-12662,SaudiArabia","gz":" Al NasrBuildingGizasquare-Giza,Egypt"},
 
@@ -17,7 +17,7 @@
 ,"services":{
   "header":{"darkText":"services"},
   "description":"In nia, we believe that the combination of creativity and technology is the key to success. We provide you with outstanding advertising services that make your brand modern and smart software solutions that meet all your technical needs."
-  ,"services":{"niaSolution":{"header":"software solutions","description":"Achieve your technical goals with our advanced software development services."}
+  ,"services":{"niaSolution":{"header":"Nia solutions","description":"Achieve your technical goals with our advanced software development services."}
 ,"ads":{"header":"nia advertising","description":"Start with your brand with our creative solutions in publicity and advertising."
 ,"inDoor":{"header":"in door","description":"We offer indoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}
 ,"outDoor":{"header":"out door","description":"We offer outdoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}

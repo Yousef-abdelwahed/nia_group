@@ -17,7 +17,7 @@ const LocationSection = ({ contactsData }) => {
     () => contactsData.filter((contact) => contact.location === "egp"),
     [contactsData]
   );
-  const location = [t("location.sa"), t("location.eg")];
+  const locationSection = [t("location.sa"), t("location.eg")];
   const [selectedTabIndex, setSelectedTabIndex] = React.useState<number>(0);
   const handleOnClick = React.useCallback(
     (index: number) => setSelectedTabIndex(index),
@@ -36,7 +36,7 @@ const LocationSection = ({ contactsData }) => {
                   <div className="w-full md:w-[420px] xl:w-[33.8%] max-lg:mb-[24px] m-auto  flex flex-col   justify-center ">
                     <div className="w-[71.4%]  mx-auto text-lg  md:text-xl  ">
                       <TabButtons
-                        tabHeader={location}
+                        tabHeader={locationSection}
                         types="location"
                         selectedTabIndex={selectedTabIndex}
                         handleOnClick={handleOnClick}
@@ -103,7 +103,7 @@ const LocationSection = ({ contactsData }) => {
                     <div className="w-[71.4%] mx-auto text-lg  md:text-xl">
                       <TabButtons
                         types="location"
-                        tabHeader={location}
+                        tabHeader={locationSection}
                         selectedTabIndex={selectedTabIndex}
                         handleOnClick={handleOnClick}
                       />

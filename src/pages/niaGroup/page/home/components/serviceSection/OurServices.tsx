@@ -36,31 +36,7 @@ const ServiceSection: React.FC = () => {
   const { currentLanguage } = useData();
   const localization = { currentLanguage };
   const { t } = useTranslation();
-  const serviceImages = [serviceSw, serviceAds];
-  const serviceData = [
-    {
-      icon: customIcon.servicesIcons.software.ads,
-      title: "ads.header",
-      desc: "ads.description",
-      img: serviceSw,
-    },
-    {
-      icon: customIcon.servicesIcons.software.app,
-      title: "niaSolution.header",
-      desc: "niaSolution.description",
-      img: serviceAds,
-    },
-    {
-      icon: customIcon.servicesIcons.software.outDoor,
-      title: "ads.outDoor.header",
-      desc: "ads.outDoor.description",
-    },
-    {
-      icon: customIcon.servicesIcons.software.inDoor,
-      title: "ads.inDoor.header",
-      desc: "ads.inDoor.description",
-    },
-  ];
+
   return (
     <section
       id="services"
@@ -115,7 +91,7 @@ const ServiceSection: React.FC = () => {
                         </p>
                         <div className="py-4 cursor-pointer relative ">
                           <ShowMore
-                            url="https://www.adv.nia.com.eg/"
+                            url="https://adv.nia.com.eg/"
                             type="service"
                           />
                         </div>
@@ -142,7 +118,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.ads.outDoor.description"
                     )}
-                    link={"https://www.adv.nia.com.eg/"}
+                    link={"https://adv.nia.com.eg/out-door"}
                     localization={localization}
                   />
                   <ServiceCard
@@ -151,7 +127,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.ads.inDoor.description"
                     )}
-                    link={"https://www.adv.nia.com.eg/"}
+                    link={"https://adv.nia.com.eg/in-door"}
                     localization={localization}
                     translation={t}
                   />
@@ -191,7 +167,7 @@ const ServiceSection: React.FC = () => {
                           {t("home.services.services.niaSolution.description")}
                         </p>
                         <ShowMore
-                          url="https://www.adv.nia.com.eg/"
+                          url="https://www.soluation.nia.com.eg"
                           type="service"
                         />
                       </div>
@@ -214,7 +190,9 @@ const ServiceSection: React.FC = () => {
                     icon={customIcon.servicesIcons.software.ads}
                     title={t("home.services.services.ads.header")}
                     description={t("home.services.services.ads.description")}
-                    link={"https://www.soluation.nia.com.eg/"}
+                    link={
+                      "https://www.soluation.nia.com.eg/nia-digital-marketing"
+                    }
                     localization={localization}
                     translation={t}
                   />
@@ -224,7 +202,7 @@ const ServiceSection: React.FC = () => {
                     description={t(
                       "home.services.services.niaSolution.description"
                     )}
-                    link={"https://www.soluation.nia.com.eg/"}
+                    link={"https://www.soluation.nia.com.eg/nia-software"}
                     localization={localization}
                     translation={t}
                   />
