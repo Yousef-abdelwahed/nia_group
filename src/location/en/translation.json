@@ -17,8 +17,8 @@
 ,"services":{
   "header":{"darkText":"services"},
   "description":"In nia, we believe that the combination of creativity and technology is the key to success. We provide you with outstanding advertising services that make your brand modern and smart software solutions that meet all your technical needs."
-  ,"services":{"niaSolution":{"header":"Nia solutions","description":"Achieve your technical goals with our advanced software development services."}
-,"ads":{"header":"nia advertising","description":"Start with your brand with our creative solutions in publicity and advertising."
+  ,"services":{"niaSolution":{"header":"Nia solutions","cardHed":"software solutions","description":"Achieve your technical goals with our advanced software development services."}
+,"ads":{"header":"nia advertising","cardHed":"digital marketing","description":"Start with your brand with our creative solutions in publicity and advertising."
 ,"inDoor":{"header":"in door","description":"We offer indoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}
 ,"outDoor":{"header":"out door","description":"We offer outdoor advertising services that transform enclosed spaces into distinctive visual experiences, with attractive signage and innovative promotional designs"}
 }

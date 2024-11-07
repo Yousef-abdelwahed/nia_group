@@ -12,13 +12,13 @@ import "./styles/index.scss";
 import { AppProvider } from "./context/AppContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  <React.Fragment>
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-      <AppProvider>
-        <App />
+        <AppProvider>
+          <App />
         </AppProvider>
       </BrowserRouter>
     </ChakraProvider>
-  </React.StrictMode>
+  </React.Fragment>
 );

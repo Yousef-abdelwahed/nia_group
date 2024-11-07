@@ -12,7 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { v4 as uuidv4 } from "uuid";
 import Icon from "../../../../../assets/icons/Icons";
@@ -62,7 +62,7 @@ const NavMobile: FC<NavMobileProps> = ({
   const sidebarRef = useRef(null);
   const { t, i18n } = useTranslation();
   const location = useLocation();
-
+  const navigate = useNavigate();
   useClickAway(sidebarRef, () => {
     if (isOpen) setOpen(false);
   });
@@ -107,9 +107,13 @@ const NavMobile: FC<NavMobileProps> = ({
       }`}
     >
       <div className="w-[45px] md:w-[70px] h-auto left-0 mx-4 translate-y-[5px]">
-        <NavHashLink to={location.pathname == "/" ? "#hero_section" : "/"}>
-          <img src={navLogo} alt="Logo" />
-        </NavHashLink>
+        <img
+          src={navLogo}
+          alt="Logo"
+          onClick={() =>
+            navigate(location.pathname == "/" ? "#hero_section" : "/")
+          }
+        />
       </div>
       <aside className="transform  ">
         <button
@@ -171,7 +175,7 @@ const NavMobile: FC<NavMobileProps> = ({
                             {t("nav.pages.ourServices")}
                           </AccordionButton>
                         </h2>
-                        <AccordionPanel pb={4} allowMultiple>
+                        <AccordionPanel pb={4}>
                           <AccordionItem border={"none"} padding={0}>
                             <h2 className="flex items-center  me-12  justify-end space-x-2  font-medium  md:text-[20px]   ">
                               <AccordionButton

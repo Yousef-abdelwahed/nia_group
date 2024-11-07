@@ -104,7 +104,7 @@ const ServiceSection: React.FC = () => {
                             : "-translate-x-[50%]"
                         }`}
                       >
-                        <h3 className="text-[1.75rem] md:text-[32px] ">
+                        <h3 className="text-[1.75rem] md:text-[32px] xl:text-[3.125rem] ">
                           {t("home.services.services.ads.header")}
                         </h3>
                       </div>{" "}
@@ -160,7 +160,7 @@ const ServiceSection: React.FC = () => {
                             : "-translate-x-[50%]"
                         }`}
                       >
-                        <h3 className="text-[1.75rem] md:text-[32px] capitalize">
+                        <h3 className="text-[1.75rem] md:text-[32px]  capitalize ">
                           {t("home.services.services.niaSolution.header")}
                         </h3>
                         <p className="service_description text-center text-pretty capitalize px-2 md:text-[22px] xl:text-[28px] md:px-6">
@@ -178,7 +178,7 @@ const ServiceSection: React.FC = () => {
                             : "-translate-x-[50%]"
                         }`}
                       >
-                        <h3 className="text-[1.75rem] md:text-[32px] ">
+                        <h3 className="text-[1.75rem] md:text-[32px] xl:text-[3.125rem] ">
                           {t("home.services.services.niaSolution.header")}
                         </h3>
                       </div>{" "}
@@ -188,7 +188,7 @@ const ServiceSection: React.FC = () => {
                 <div className="service_card_box flex w-full max-md:flex-col  md:gap-[1rem] max-md:gap-[1rem]  lg:order-2">
                   <ServiceCard
                     icon={customIcon.servicesIcons.software.ads}
-                    title={t("home.services.services.ads.header")}
+                    title={t("home.services.services.ads.cardHed")}
                     description={t("home.services.services.ads.description")}
                     link={
                       "https://www.soluation.nia.com.eg/nia-digital-marketing"
@@ -198,7 +198,7 @@ const ServiceSection: React.FC = () => {
                   />
                   <ServiceCard
                     icon={customIcon.servicesIcons.software.app}
-                    title={t("home.services.services.niaSolution.header")}
+                    title={t("home.services.services.niaSolution.cardHed")}
                     description={t(
                       "home.services.services.niaSolution.description"
                     )}

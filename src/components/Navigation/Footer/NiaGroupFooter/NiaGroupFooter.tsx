@@ -3,7 +3,7 @@ import { footerLogo } from "../../../../assets";
 import { customIcon } from "../../../../assets/icons/customIcon";
 import { v4 as uuidv4 } from "uuid";
 import { socialMediaLinks } from "@/constants/constants";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HashLink, NavHashLink } from "react-router-hash-link";
 
 interface IProps {}
@@ -84,6 +84,7 @@ const NiaGroupFooter = ({}: IProps) => {
       url: location.pathname == "/" ? "#our-team" : "/",
     },
   ];
+  const navigate = useNavigate();
   return (
     <footer
       className={` sticky bottom-0 left-0 right-0 z-0 bg-[#131312]  text-white mx-auto  w-full   overflow-hidden  ${
@@ -91,14 +92,15 @@ const NiaGroupFooter = ({}: IProps) => {
       }`}
     >
       <div className="footer_links mx-auto  max-md:max-w-[51.5%] md:max-w-[47.9%] lg:max-w-[30%] ">
-        <NavHashLink to={location.pathname == "/" ? "#hero_section" : "/"}>
-          <img
-            src={footerLogo}
-            width={109}
-            alt="logo of brand nia"
-            className="mx-auto py-[32px]"
-          />
-        </NavHashLink>
+        <img
+          src={footerLogo}
+          width={109}
+          alt="logo of brand nia"
+          className="mx-auto py-[32px]"
+          onClick={() =>
+            navigate(location.pathname == "/" ? "#hero_section" : "/")
+          }
+        />
         <ul className="grid gap-4 grid-cols-2  md:flex md:justify-between   ">
           {footerLinks.map((link) => (
             <li
@@ -195,10 +197,8 @@ const NiaGroupFooter = ({}: IProps) => {
                     i18n.language === "ar" && "phoneDirection"
                   }`}
                 >
-                  <HashLink to={"tel:+966551326054"} className="flex">
-                    {" "}
-                    +966551326054
-                  </HashLink>
+                  {" "}
+                  +966551326054
                 </div>
               </HashLink>
             </div>
